@@ -1,0 +1,116 @@
+/* General Reset */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+}
+
+/* Navbar (same as Home) */
+.navbar {
+    background-color: #4CAF50;
+    padding: 15px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+.nav-links a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Login Box */
+.auth-box {
+    max-width: 420px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    background: #4CAF50;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+/* Toggle Buttons */
+.toggle-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.toggle-btns button {
+    width: 48%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s;
+}
+.toggle-btns button.active {
+    background-color: #4CAF50;
+    color: #000;
+}
+.toggle-btns button:hover {
+    background-color: #cbe8d4;
+}
+
+/* Messages */
+.msg {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

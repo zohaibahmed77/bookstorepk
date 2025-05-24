@@ -1,0 +1,220 @@
+/* General Reset */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #4CAF50; /* soft indigo */
+    padding: 15px 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+.nav-links a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-content {
+    color: white;
+    max-width: 700px;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.hero-btn {
+    padding: 12px 30px;
+    background-color: #00fd7a;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.hero-btn:hover {
+    background-color: #41bd7d;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Stats Section */
+.stats {
+    background-color: #eaf5ed;
+    padding: 80px 0;
+    text-align: center;
+}
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.stat-box {
+    flex: 1 1 200px;
+    margin: 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.stat-box h2 {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.category-card {
+    padding: 30px 40px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+    flex: 1 1 180px;
+    text-align: center;
+}
+
+/* Gradient backgrounds for each card */
+.category-card:nth-child(1) {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Education */
+}
+.category-card:nth-child(2) {
+    background: linear-gradient(135deg, #00b09b, #96c93d); /* Fitness */
+}
+.category-card:nth-child(3) {
+    background: linear-gradient(135deg, #f7971e, #ffd200); /* Comedy */
+}
+.category-card:nth-child(4) {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Novels */
+}
+.category-card:nth-child(5) {
+    background: linear-gradient(135deg, #43cea2, #185a9d); /* Life */
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Reviews Section */
+.reviews {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.review-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    font-size: 16px;
+}
+
+/* Why Us Section */
+.why-us {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+.reasons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+.reason {
+    background: #eaf5ed;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
